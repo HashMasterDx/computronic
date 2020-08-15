@@ -10,6 +10,19 @@ use Carbon\Carbon;
 class usuariosscontroller extends Controller
 {
 
+   //Funcion que retorna la lista de los servicios a la vista
+   public function VerUsersWeb()
+   {
+     $articulo = Producto::all();
+     return view('galeria', compact('articulo'));
+   }
+ 
+   public function VerUsers()
+   {
+     $articulo = usuario::all();
+     return view('Admin_profile', compact('name'));
+   }
+
     public function del(Request $request)
       {
         $_id = $request->input('_id');

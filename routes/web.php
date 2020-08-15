@@ -40,6 +40,8 @@ Route::get('EliminarUser','HomeController@EliminarUser')->name('EliminarUser');
 Route::put('borrauser','usuariosscontroller@del')->name('borrauser');
 
 
+Route::get('Admin_profile','usuariosscontroller@VerUsers');
+
 Route::get('adservisios','HomeController@adservisiosver')->name('adservisiosver');
 
 Route::get('adservisios','ServiciosControler@VerServicios')->name('adservisios');
