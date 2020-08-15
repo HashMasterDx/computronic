@@ -20,5 +20,8 @@ class usuariosscontroller extends Controller
                      'password' => $password,
                      'updated_at' => Carbon::now()
                  ]);
+
+                 //  $articulo->save();
+   return redirect()->back()->with(['message'=> 'Successfully update']);
       }
 }
