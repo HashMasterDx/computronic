@@ -69,5 +69,9 @@ class HomeController extends Controller
     {
         return view('admin.Modificaruser');
     }
+    public function EliminarUser()
+    {
+        return view('admin.EliminarUser');
+    }
     
 }

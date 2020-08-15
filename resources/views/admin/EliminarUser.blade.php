@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Eliminar Producto</h3>
+                        <h3>Eliminar Usuario</h3>
                     </div>
                 </div>
             </div>
@@ -100,13 +100,13 @@
                               <br>
                               <li>
                                   <a href="{{url('/ModificarProducto/')}}" class="d-flex ">
-                                      <p>Actualizar Producto</p>
+                                      <p>Actualizar usuario</p>
                                   </a>
                               </li>
                               <br>
                               <li>
-                                  <a href="{{url('/EliminarProducto/')}}" class="d-flex ">
-                                      <p>Eliminar Producto</p>
+                                  <a href="{{url('/EliminarUser/')}}" class="d-flex ">
+                                      <p>Eliminar usuario</p>
                                   </a>
                               </li>
                               <br>
@@ -120,8 +120,9 @@
                         </div>
                     </div>
                 </div>
-                <form method="post" class="formulario" action="{{('BorraProducto')}}">
+                <form method="post" class="formulario" action="{{('borrauser')}}">
                       @csrf
+                      @method('put')
                 <div class="col-xl-9 col-md-9">
                     <div class="card text-center wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".4s">
                         <div class="get_in_tauch_area">
@@ -131,13 +132,13 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                                        <p>Clave Porducto.</p>
+                                                        <p>ID.</p>
                                                         <input type="text" placeholder="_id" name="_id">
                                                     </div>
                                                 </div>
                                             <div class="col-md-6">
                                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                                        <p>Nombre Producto.</p>
+                                                        <p>Nombre del usuario.</p>
                                                         <input type="name" placeholder="nombre" name="nombre">
                                                     </div>
                                             </div>

@@ -36,6 +36,10 @@ Route::get('/mModificarsuer', function () {
 });
 Route::put('modificaruser','usuariosscontroller@editUser')->name('modificaruser');
 
+Route::get('EliminarUser','HomeController@EliminarUser')->name('EliminarUser');
+Route::put('borrauser','usuariosscontroller@del')->name('borrauser');
+
+
 Route::get('adservisios','HomeController@adservisiosver')->name('adservisiosver');
 
 Route::get('adservisios','ServiciosControler@VerServicios')->name('adservisios');

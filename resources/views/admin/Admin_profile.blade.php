@@ -111,6 +111,18 @@
                             </li>
                             <br>
                             <li>
+                                <a href="{{url('/Modificaruser/')}}" class="d-flex">
+                                    <p>modificar usuario</p>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="{{url('/EliminarUser/')}}" class="d-flex">
+                                    <p>Eliminar usuario</p>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
                                 <a href="#" class="d-flex">
                                     <p>Cerrar Sesión</p>
                                 </a>

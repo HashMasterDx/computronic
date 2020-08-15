@@ -111,12 +111,7 @@
                                 </a>
                             </li>
                             <br>
-                            <li>
-                                <a href="{{url('/Modificaruser/')}}" class="d-flex">
-                                    <p>modificar usuario</p>
-                                </a>
-                            </li>
-                            <br>
+                            
                         </ul>
                         </div>
                     </div>
